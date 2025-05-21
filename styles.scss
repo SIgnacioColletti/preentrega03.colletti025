@@ -1,0 +1,143 @@
+$color-fondo: rgb(245, 245, 245);
+$color-texto: rgb(51, 51, 51);
+$color-oscuro: rgb(34, 34, 34);
+$color-claro: rgb(255, 255, 255);
+$color-borde: rgb(204, 204, 204);
+$color-producto: rgb(222, 217, 217);
+$espacio-general: 1rem;
+$espacio-doble: 2rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: $color-fondo;
+  color: $color-texto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: $color-oscuro;
+  color: $color-claro;
+  padding: $espacio-general;
+  text-align: center;
+}
+
+.nav {
+  a {
+    color: $color-claro;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.mensaje-bienvenida {
+  text-align: center;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $espacio-doble;
+  padding: $espacio-doble;
+  flex-grow: 1;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px;
+  gap: 12px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  background: $color-producto;
+  border: 1px solid $color-borde;
+  padding: $espacio-general;
+  height: max-content;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px;
+  }
+}
+
+.formulario {
+  max-width: 600px;
+  margin: $espacio-doble auto;
+  padding: $espacio-doble;
+  background: $color-claro;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: $espacio-general;
+    padding: 0.75rem;
+    border: 1px solid $color-borde;
+    border-radius: 5px;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn-form {
+  background-color: $color-oscuro;
+  color: $color-claro;
+  padding: 0.75rem $espacio-doble;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: $color-oscuro;
+  color: $color-claro;
+  text-align: center;
+  padding: $espacio-general;
+  margin-top: $espacio-doble;
+}
+
+@media (max-width: 1100px) {
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
