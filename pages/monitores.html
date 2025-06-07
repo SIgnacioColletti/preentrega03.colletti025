@@ -4,59 +4,125 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos - Tienda PC</title>
-    <link rel="stylesheet" href="../estilos.css" />
+    <title>Monitores - Tienda PC</title>
+    <link rel="stylesheet" href="../styles/stilos.css" />
 </head>
+
 
 <body>
     <header class="header">
         <h1>Kratos Pc</h1>
         <nav class="nav">
             <a href="../index.html">Inicio</a>
-            <a href="auriculars.html">Auriculares</a>
+            <a href="auriculares.html">Auriculares</a>
             <a href="mouse.html">Mouse</a>
             <a href="teclados.html">teclados</a>
             <a href="monitores.html">monitores</a>
             <a href="contacto.html">Contacto</a>
-
         </nav>
     </header>
-    <main class="productos">
-        <div class="producto">
-            <img src="../img/monitor1.jpg" alt=" Teclado Mecánico">
-            <h3>monitopr gamer 1</h3>
-            <p>$50 USD</p>
+
+    <div class="container">
+        <!-- Sidebar de Promociones (solo visible en desktop) -->
+        <aside class="sidebar">
+            <div class="promociones-title">
+                🔥 Promociones Especiales
+            </div>
+
+            <div class="promo-efectivo">
+                <h3>💰 Pago en Efectivo</h3>
+                <div class="descuento">15% OFF</div>
+                <p>¡Aprovecha el mejor precio!</p>
+            </div>
+
+            <div class="cuotas-section">
+                <h4 class="cuotas-title">📊 Financiación en Cuotas</h4>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">3 cuotas</span>
+                    <span class="interes">18% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">6 cuotas</span>
+                    <span class="interes">45% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">9 cuotas</span>
+                    <span class="interes">78% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">12 cuotas</span>
+                    <span class="interes">120% TEA</span>
+                </div>
+
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: #fff3cd; border-radius: 8px; font-size: 0.85rem; color: #856404;">
+                    <strong>💡 Tip:</strong> El pago en efectivo siempre es la mejor opción. Las tasas reflejan la
+                    inflación argentina actual.
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <section class="mensaje-bienvenida">
+                <h2>🖥️ Monitores Gamers</h2>
+                <p>La mejor experiencia visual para tu gaming</p>
+            </section>
+
+            <main class="productos">
+                <div class="producto">
+                    <img src="../img/monitor1.jpg" alt="Monitor Gamer">
+                    <h3>Monitor Gamer 24" Full HD</h3>
+                    <div class="monitor-specs">144Hz • 1ms • IPS • FreeSync</div>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$250 USD <span class="precio-efectivo">$212.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/monitor2.jpg" alt="Monitor Gamer">
+                    <h3>Monitor Gamer 27" QHD</h3>
+                    <div class="monitor-specs">165Hz • 0.5ms • VA • G-Sync</div>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$380 USD <span class="precio-efectivo">$323.00 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/monitor3.jpg" alt="Monitor Gamer">
+                    <h3>Monitor Gamer 32" 4K</h3>
+                    <div class="monitor-specs">120Hz • 1ms • IPS • HDR400</div>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$520 USD <span class="precio-efectivo">$442.00 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/monitor4.jpg" alt="Monitor Gamer">
+                    <h3>Monitor Gamer 24" Curvo</h3>
+                    <div class="monitor-specs">180Hz • 1ms • VA • 1500R</div>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$320 USD <span class="precio-efectivo">$272.00 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/monitor5.jpg" alt="Monitor Gamer">
+                    <h3>Monitor Gamer 27" Ultrawide</h3>
+                    <div class="monitor-specs">144Hz • 1ms • IPS • 21:9</div>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$450 USD <span class="precio-efectivo">$382.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/monitor6.jpg" alt="Monitor Gamer">
+                    <h3>Monitor Gamer 32" Curvo QHD</h3>
+                    <div class="monitor-specs">240Hz • 0.5ms • VA • 1000R</div>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$580 USD <span class="precio-efectivo">$493.00 efectivo</span></p>
+                </div>
+            </main>
         </div>
-        <div class="producto">
-            <img src="../img/monitor2.jpg" alt=" Teclado Mecánico">
-            <h3>monitopr gamer 2</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/monitor3.jpg" alt=" Teclado Mecánico">
-            <h3>monitopr gamer 3</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/monitor4.jpg" alt=" Teclado Mecánico">
-            <h3>monitopr gamer 4</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/monitor5.jpg" alt=" Teclado Mecánico">
-            <h3>monitopr gamer 5</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/monitor6.jpg" alt=" Teclado Mecánico">
-            <h3>monitopr gamer 6</h3>
-            <p>$50 USD</p>
-        </div>
-    </main>
+    </div>
 
     <footer class="footer">
         <p>&copy; 2025 Tienda PC Accesorios</p>
     </footer>
 </body>
 
-</html>./
+</html>

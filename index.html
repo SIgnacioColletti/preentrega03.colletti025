@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda PC Accesorios</title>
-    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="stylesheet" href="./styles/stilos.css" />
+
+
 </head>
 
 <body>
@@ -18,36 +20,85 @@
             <a href="./pages/teclados.html">teclados</a>
             <a href="./pages/monitores.html">monitores</a>
             <a href="./pages/contacto.html">Contacto</a>
-
         </nav>
     </header>
 
-    <section class="mensaje-bienvenida">
-        <h2>¡Todo para tu setup gamer!</h2>
-        <p>Encuentra los mejores teclados, mouses, auriculares y monitores.</p>
-    </section>
-    <main class="grid-productos">
-        <div class="producto">
-            <img src="./img/monitor1.jpg" alt="Teclado Mecánico">
-            <h3>Teclado Mecánico</h3>
-            <p>$50 USD</p>
+    <div class="container">
+        <!-- Sidebar de Promociones (solo visible en desktop) -->
+        <aside class="sidebar">
+            <div class="promociones-title">
+                🔥 Promociones Especiales
+            </div>
+
+            <div class="promo-efectivo">
+                <h3>💰 Pago en Efectivo</h3>
+                <div class="descuento">15% OFF</div>
+                <p>¡Aprovecha el mejor precio!</p>
+            </div>
+
+            <div class="cuotas-section">
+                <h4 class="cuotas-title">📊 Financiación en Cuotas</h4>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">3 cuotas</span>
+                    <span class="interes">18% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">6 cuotas</span>
+                    <span class="interes">45% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">9 cuotas</span>
+                    <span class="interes">78% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">12 cuotas</span>
+                    <span class="interes">120% TEA</span>
+                </div>
+
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: #fff3cd; border-radius: 8px; font-size: 0.85rem; color: #856404;">
+                    <strong>💡 Tip:</strong> El pago en efectivo siempre es la mejor opción. Las tasas reflejan la
+                    inflación argentina actual.
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <section class="mensaje-bienvenida">
+                <h2>¡Todo para tu setup gamer!</h2>
+                <p>Encuentra los mejores teclados, mouses, auriculares y monitores.</p>
+            </section>
+
+            <main class="grid-productos">
+                <div class="producto">
+                    <img src="./img/monitor1.jpg" alt="Teclado Mecánico">
+                    <h3>Teclado Mecánico</h3>
+                    <p>$50 USD</p>
+                </div>
+                <div class="producto">
+                    <img src="./img/mouse3.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer</h3>
+                    <p>$35 USD</p>
+                </div>
+                <div class="producto">
+                    <img src="./img/auris3.jpg" alt="Auriculares">
+                    <h3>Auriculares</h3>
+                    <p>$40 USD</p>
+                </div>
+                <div class="producto">
+                    <img src="./img/monitor2.jpg" alt="Monitor 144Hz">
+                    <h3>Monitor 144Hz</h3>
+                    <p>$200 USD</p>
+                </div>
+            </main>
         </div>
-        <div class="producto">
-            <img src="./img/mouse3.jpg" alt="Mouse Gamer">
-            <h3>Mouse Gamer</h3>
-            <p>$35 USD</p>
-        </div>
-        <div class="producto">
-            <img src="./img/auris3.jpg" alt="Auriculares">
-            <h3>Auriculares</h3>
-            <p>$40 USD</p>
-        </div>
-        <div class="producto">
-            <img src="./img/monitor2.jpg" alt="Monitor 144Hz">
-            <h3>Monitor 144Hz</h3>
-            <p>$200 USD</p>
-        </div>
-    </main>
+    </div>
+
     <footer class="footer">
         <p>&copy; 2025 Tienda PC Accesorios</p>
     </footer>

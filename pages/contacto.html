@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../estilos.css" />
+    <title>Contacto - Kratos PC</title>
+    <link rel="stylesheet" href="../styles/stilos.css" />
+
 </head>
 
 <body>
@@ -13,32 +14,116 @@
         <h1>Kratos Pc</h1>
         <nav class="nav">
             <a href="../index.html">Inicio</a>
-            <a href="auriculars.html">Auriculares</a>
+            <a href="auriculares.html">Auriculares</a>
             <a href="mouse.html">Mouse</a>
             <a href="teclados.html">teclados</a>
             <a href="monitores.html">monitores</a>
             <a href="contacto.html">Contacto</a>
-
         </nav>
     </header>
-    <section class="formulario">
-        <h2>Escríbenos</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
+    <div class="container">
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" rows="4"></textarea>
+        <div class="main-content">
+            <section class="page-title">
+                <h2>📞 Contactanos</h2>
+                <p>Estamos aquí para ayudarte con tu setup gamer ideal</p>
+            </section>
 
-        </form>
-        <button class="btn-form" type="submit">Enviar</button>
-    </section>
+            <div class="contact-container">
+
+                <section class="formulario">
+                    <h3>📝 Escríbenos</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (opcional):</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234-5678" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required
+                                placeholder="¿En qué podemos ayudarte?" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required
+                                placeholder="Cuéntanos qué necesitas para tu setup gamer..."></textarea>
+                        </div>
+
+                        <button class="btn-form" type="submit">Enviar Mensaje</button>
+                    </form>
+                </section>
+
+
+                <section class="contact-info">
+                    <h3>📍 Información de Contacto</h3>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Dirección</h4>
+                            <p>Av. Córdoba 1234, Rosario<br>Santa Fe, Argentina</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Teléfono</h4>
+                            <p>+54 341 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h4>WhatsApp</h4>
+                            <p>+54 9 341 765-4321</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@kratospc.com.ar</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-content">
+                            <h4>Horarios</h4>
+                            <p>Lun - Vie: 9:00 - 18:00<br>Sáb: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h4>Redes Sociales</h4>
+                            <p>@kratospc_arg</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
-        <p>&copy; 2025 Kratos Pc</p>
+        <p>&copy; 2025 Kratos Pc - Todos los derechos reservados</p>
     </footer>
 </body>
 

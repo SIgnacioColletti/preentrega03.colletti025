@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos - Tienda PC</title>
-    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="stylesheet" href="../styles/stilos.css" />
+
 </head>
 
 <body>
@@ -18,41 +19,100 @@
             <a href="teclados.html">teclados</a>
             <a href="monitores.html">monitores</a>
             <a href="contacto.html">Contacto</a>
-
         </nav>
     </header>
-    <main class="productos">
-        <div class="producto">
-            <img src="../img/mouse1.jpg" alt=" Teclado Mecánico">
-            <h3>mause gamer 1</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/mouse2.jpg" alt=" Teclado Mecánico">
-            <h3>mause gamer 2 </h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/mouse3.jpg" alt=" Teclado Mecánico">
-            <h3>mause gamer 3</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/mouse4.jpg" alt=" Teclado Mecánico">
-            <h3>Tmause gamer 4</h3>
 
+    <div class="container">
+        <!-- Sidebar de Promociones (solo visible en desktop) -->
+        <aside class="sidebar">
+            <div class="promociones-title">
+                🔥 Promociones Especiales
+            </div>
+
+            <div class="promo-efectivo">
+                <h3>💰 Pago en Efectivo</h3>
+                <div class="descuento">15% OFF</div>
+                <p>¡Aprovecha el mejor precio!</p>
+            </div>
+
+            <div class="cuotas-section">
+                <h4 class="cuotas-title">📊 Financiación en Cuotas</h4>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">3 cuotas</span>
+                    <span class="interes">18% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">6 cuotas</span>
+                    <span class="interes">45% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">9 cuotas</span>
+                    <span class="interes">78% TEA</span>
+                </div>
+
+                <div class="cuota-item">
+                    <span class="cuotas-num">12 cuotas</span>
+                    <span class="interes">120% TEA</span>
+                </div>
+
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: #fff3cd; border-radius: 8px; font-size: 0.85rem; color: #856404;">
+                    <strong>💡 Tip:</strong> El pago en efectivo siempre es la mejor opción. Las tasas reflejan la
+                    inflación argentina actual.
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <section class="mensaje-bienvenida">
+                <h2>🖱️ Mouse Gamers</h2>
+                <p>Precisión y velocidad para tu gaming</p>
+            </section>
+
+            <main class="productos">
+                <div class="producto">
+                    <img src="../img/mouse1.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 1</h3>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$50 USD <span class="precio-efectivo">$42.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/mouse2.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 2</h3>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$50 USD <span class="precio-efectivo">$42.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/mouse3.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 3</h3>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$50 USD <span class="precio-efectivo">$42.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/mouse4.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 4</h3>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$50 USD <span class="precio-efectivo">$42.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/mouse5.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 5</h3>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$50 USD <span class="precio-efectivo">$42.50 efectivo</span></p>
+                </div>
+                <div class="producto">
+                    <img src="../img/mouse6.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 6</h3>
+                    <button>AGREGAR AL CARRITO</button>
+                    <p>$50 USD <span class="precio-efectivo">$42.50 efectivo</span></p>
+                </div>
+            </main>
         </div>
-        <div class="producto">
-            <img src="../img/mouse5.jpg" alt=" Teclado Mecánico">
-            <h3>mause gamer 5</h3>
-            <p>$50 USD</p>
-        </div>
-        <div class="producto">
-            <img src="../img/mouse6.jpg" alt=" Teclado Mecánico">
-            <h3>mause gamer 6 </h3>
-            <p>$50 USD</p>
-        </div>
-    </main>
+    </div>
 
     <footer class="footer">
         <p>&copy; 2025 Tienda PC Accesorios</p>
